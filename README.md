@@ -1,18 +1,3 @@
-┌─────────────────────────────────────────┐
-│            Main Orchestrator            │
-│       (Sequential Execution Engine)     │
-└─────┬────────┬──────┬──────┬────────────┘
-      │        │      │      │
-┌─────▼────┐ ┌─▼──────▼─┐ ┌──▼─────────┐
-│ Pipe     │ │ Shared   │ │ Sockets    │
-│ Module   │ │ Memory   │ │ Module     │
-└──────────┘ │ Module   │ └────────────┘
-┌──────────┐ └──────────┘ ┌────────────┐
-│ FIFO     │ ┌──────────┐ │ Signals    │
-│ Module   │ │ Message  │ │ Module     │
-└──────────┘ │ Queues   │ └────────────┘
-             │ Module   │
-             └──────────┘
 
 How to Build and Run::
 
